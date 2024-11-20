@@ -117,6 +117,7 @@ The main logic (resource allocation) is abstracted into a dedicated ResourceAllo
 
 ## How to Use
 
+
 ```
 clang++ -std=c++20 main.cpp UAV.cpp Outpost.cpp ResourceAllocator.cpp -o main
 ```
