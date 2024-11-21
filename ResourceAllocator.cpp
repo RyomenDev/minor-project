@@ -23,7 +23,7 @@ void ResourceAllocator::allocateResources()
         // Try to serve as many outposts as possible within UAV's capacity and distance
         for (auto &outpost : outposts)
         {
-            double totalUnfulfilledWeight = calculateUnfulfilledWeight(outpost.getResources());
+            double totalUnfulfilledWeight = calculateUnfulfilledWeight(outpost.getRequirements());
 
             if (totalUnfulfilledWeight <= 0 || outpost.getDistance() > uav.getMaxDistance())
             {

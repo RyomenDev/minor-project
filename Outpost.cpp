@@ -1,5 +1,3 @@
-// Definition of the Outpost class.
-
 #include "Outpost.hpp"
 
 Outpost::Outpost(int id, double distance, int urgency)
@@ -25,12 +23,12 @@ void Outpost::addResource(const Resource &res)
     resources.push_back(res);
 }
 
-const std::vector<Resource> &Outpost::getResources() const
-{
-    return resources;
-}
-
 std::vector<Resource> &Outpost::getRequirements()
 {
-    return resources; // Provide mutable access to resources
+    return resources; // Mutable reference
+}
+
+const std::vector<Resource> &Outpost::getRequirements() const
+{
+    return resources; // Immutable reference
 }

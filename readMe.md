@@ -125,3 +125,28 @@ clang++ -std=c++20 main.cpp UAV.cpp Outpost.cpp ResourceAllocator.cpp -o main
 **Input:** The system takes as input the number of outposts and their resource requirements.
 **UAV Data:** UAV information is pre-loaded from the default UAV table (defaultUAVs).
 **Output:** The system outputs a detailed plan of resource allocation, including which UAVs are assigned to which outposts and how much of each resource is delivered.
+
+## Key Features
+### Dynamic Prioritization:
+
+Outpost urgency and distance govern resource allocation.
+Ensures critical outposts receive prioritized deliveries, improving overall efficiency.
+Resource Priority Handling:
+
+Medicine > Food > Weapons (fixed priority).
+Guarantees life-critical supplies are delivered first.
+UAV Allocation Logic:
+
+Optimized based on load capacity, distance, and availability.
+Manages UAV schedules dynamically to avoid delays.
+Partial Fulfillment Support:
+
+Implements partial deliveries for outposts with high demands.
+UAVs return to reload and continue servicing pending requirements.
+Route Optimization:
+
+Serves outposts with equal urgency based on proximity, minimizing travel time.
+Concurrency and Efficiency:
+
+Multiple UAVs work in parallel.
+Idle times are minimized with efficient UAV scheduling and task rotation.

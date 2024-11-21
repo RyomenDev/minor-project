@@ -1,5 +1,3 @@
-// Declaration of the Outpost class and Resource structure.
-
 #ifndef OUTPOST_HPP
 #define OUTPOST_HPP
 
@@ -21,7 +19,9 @@ public:
     double getDistance() const;
     int getUrgency() const;
     void addResource(const Resource &res);
-    std::vector<Resource> &getRequirements(); // Return mutable reference to requirements
+
+    std::vector<Resource> &getRequirements();             // Mutable reference
+    const std::vector<Resource> &getRequirements() const; // Immutable reference
 };
 
 #endif
