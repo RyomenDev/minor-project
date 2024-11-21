@@ -1,6 +1,6 @@
 #ifndef OUTPOST_HPP
 #define OUTPOST_HPP
-
+//
 #include <vector>
 #include "Resource.hpp"
 

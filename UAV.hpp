@@ -1,6 +1,6 @@
 
 // Declaration of the UAV class.
-
+//
 #ifndef UAV_HPP
 #define UAV_HPP
 

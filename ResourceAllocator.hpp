@@ -1,5 +1,5 @@
 // Declaration of the ResourceAllocator class.
-
+//
 #ifndef RESOURCEALLOCATOR_HPP
 #define RESOURCEALLOCATOR_HPP
 

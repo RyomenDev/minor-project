@@ -1,5 +1,5 @@
 // Definition of the UAV class.
-
+//
 #include "UAV.hpp"
 
 UAV::UAV(int id, double loadCapacity, double maxDistance)

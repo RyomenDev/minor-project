@@ -1,4 +1,5 @@
 #include "Outpost.hpp"
+//
 
 Outpost::Outpost(int id, double distance, int urgency)
     : id(id), distance(distance), urgency(urgency) {}
